@@ -1,0 +1,110 @@
+
+.icono {
+
+    fill: rgb(54, 0, 0);
+    cursor: pointer;
+    &:hover {
+        fill: rgb(255, 0, 0);
+        
+    }
+}
+
+footer {
+    color: black;
+    align-items: baseline;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(255, 255, 255);
+
+    .cajauno {
+        padding-top: 30px;
+        align-items: center;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+
+        .cajasocial {
+            background-color: #ffffff;
+            display: inline;
+
+
+            .cajalogo {
+                border-radius: 20px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .cajadescripcion {
+                font-size: 15px;
+                background-color: rgb(255, 255, 255);
+                padding-top: 10px;
+            }
+
+
+            .cajasocialiconos {
+                display: flex;
+                background-color: #ffffff;
+                padding-top: 20px;
+                flex-direction: row;
+                justify-content: space-between;
+
+            }
+        }
+
+        .cajainformation {
+            background-color: #ffffff;
+
+            .tituloinformation {
+                font-weight: bold;
+                font-size: 17px;
+                padding-bottom: 20px;
+            }
+            .enlaceinformation{
+                list-style: none;
+                padding-bottom: 10px;
+                cursor: pointer;
+               
+            }
+            .enlaceinformation:hover{
+                color: #3000db;
+            }
+        }
+    }
+
+}
+.for {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.CajaFor {
+    background-color: #3d1515;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.reservarfondo {
+    opacity: 0.8;
+}
+
+.etiqueta {
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 550px;
+}
+
+.ingresar {
+    border-radius: 15px;
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 550px;
+}

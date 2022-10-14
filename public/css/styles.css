@@ -1,0 +1,263 @@
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+:root {
+  /* Font */
+  --Sansita: "Sansita", sans-serif;
+  --Roboto: "Roboto", sans-serif;
+  --font-stack: Helvetica, sans-serif;
+  /* Colors */
+  /* Colors Iconos */
+  --fillfacebook: #0e0e9c;
+  --fillwhatsapp: #008011;
+  --fillinstagram: #9c0c0c;
+  --fillemail: #f0f0f0;
+  --fillallicons: rgb(54, 0, 0);
+  --fillhovericons: rgb(209, 9, 9);
+  /* Alert messages */
+  /* Background */
+  /* Border */
+  /* Font */
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+/* Inherit fonts for inputs and buttons */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  max-width: 1024px;
+}
+
+.icono {
+  fill: rgb(54, 0, 0);
+  cursor: pointer;
+}
+.icono:hover {
+  fill: rgb(255, 0, 0);
+}
+
+footer {
+  color: black;
+  align-items: baseline;
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(255, 255, 255);
+}
+footer .cajauno {
+  padding-top: 30px;
+  align-items: center;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+}
+footer .cajauno .cajasocial {
+  background-color: #ffffff;
+  display: inline;
+}
+footer .cajauno .cajasocial .cajalogo {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+footer .cajauno .cajasocial .cajadescripcion {
+  font-size: 15px;
+  background-color: rgb(255, 255, 255);
+  padding-top: 10px;
+}
+footer .cajauno .cajasocial .cajasocialiconos {
+  display: flex;
+  background-color: #ffffff;
+  padding-top: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .cajauno .cajainformation {
+  background-color: #ffffff;
+}
+footer .cajauno .cajainformation .tituloinformation {
+  font-weight: bold;
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+footer .cajauno .cajainformation .enlaceinformation {
+  list-style: none;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+footer .cajauno .cajainformation .enlaceinformation:hover {
+  color: #3000db;
+}
+
+.for {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.CajaFor {
+  background-color: #3d1515;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reservarfondo {
+  opacity: 0.8;
+}
+
+.etiqueta {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 100px;
+  left: 550px;
+}
+
+.ingresar {
+  border-radius: 15px;
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  top: 150px;
+  left: 550px;
+}
+
+.CajaPrincipal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 55px;
+  background-color: rgb(255, 255, 255);
+  padding-right: 30px;
+  box-shadow: 2px 2px 5px #caafaf;
+  width: 100%;
+  z-index: -1;
+}
+.CajaPrincipal .logo {
+  margin-right: 25px;
+  border-radius: 20px;
+}
+.CajaPrincipal .nombre {
+  font-family: var(--Sansita);
+  font-size: 25px;
+  color: #0a0a0a;
+  display: block;
+  padding-right: 640px;
+}
+.CajaPrincipal .nav-item {
+  display: inline-block;
+  margin-left: 50px;
+  font-size: 15px;
+}
+.CajaPrincipal .nav-link {
+  font-size: 18px;
+  font-family: var(--Sansita);
+  width: 110px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: 0.4s;
+}
+.CajaPrincipal .nav-link:hover {
+  transform: translateY(-10px);
+  border-bottom: 1px solid #000000;
+  color: rgb(34, 9, 255);
+}
+.CajaPrincipal .nav-link:focus {
+  color: rgb(255, 123, 0);
+}
+
+.icons {
+  fill: var(--fillallicons);
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.4s;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px, rgb(255, 255, 255) -3px -3px 6px 1px;
+}
+.icons:hover {
+  fill: var(--fillhovericons);
+  transform: translateY(-10px);
+}
+
+.face {
+  fill: var(--fillfacebook);
+}

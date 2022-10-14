@@ -1,0 +1,47 @@
+.CajaPrincipal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 55px;
+    background-color: rgb(255, 255, 255);
+    padding-right: 30px;
+    box-shadow: 2px 2px 5px #caafaf;
+    width: 100%;
+    z-index: -1;
+    .logo {
+      margin-right: 25px;
+      border-radius: 20px;
+    }
+    
+    .nombre {
+      font-family: var(--Sansita);
+      font-size: 25px;
+      color: #0a0a0a;
+      display: block;
+      padding-right: 640px;
+    }
+    .nav-item {
+      display: inline-block;
+      margin-left: 50px;
+      font-size: 15px;
+    }
+    
+    .nav-link {
+      font-size: 18px;
+      font-family: var(--Sansita);
+      width: 110px;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      transition:0.4s;
+      
+      &:hover {
+          transform: translateY(-10px);
+        border-bottom: 1px solid #000000;
+        color: rgb(34, 9, 255);
+      }
+      &:focus {
+        color: rgb(255, 123, 0);
+      }
+    }
+  }
+  
