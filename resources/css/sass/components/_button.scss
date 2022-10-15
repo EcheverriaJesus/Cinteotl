@@ -1,0 +1,26 @@
+.boton{
+    width: 120px;
+    height: 30px;
+    position: absolute;
+    overflow: hidden;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 15px;
+    top: 400px;
+    left: 100px;
+    
+    
+}
+.boton::before{
+    content: '';
+    position: absolute;
+    background:rgb(73, 0, 0);
+    left: -10px;
+    width: 10px;
+    top: 0;
+    bottom: 0;
+}
+    .boton:hover::before{
+        left: calc(100% + 10px);
+        transition: left 500ms;
+    }

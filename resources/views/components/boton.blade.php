@@ -1,0 +1,1 @@
+<button class="boton">{{ $contenidoboton }}</button>

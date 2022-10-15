@@ -4,6 +4,7 @@
     --Roboto: 'Roboto', sans-serif;
     --font-stack: Helvetica, sans-serif;
     /* Colors */
+    --primarycolor: rgb(14, 13, 13);
 
     /* Colors Iconos */
     --fillfacebook: #0e0e9c;
@@ -13,10 +14,16 @@
     --fillallicons: rgb(54, 0, 0);
     --fillhovericons: rgb(209, 9, 9);
     /* Alert messages */
+
     /* Background */
 
     /* Border */
 
     /* Font */
-
+    --lineleft: 100px;
+    --title: 70px;
+    --textnormal: 25px;
+/* 
+    --colorrowA: <?php echo $botontop; ?>;
+    --colorrowB: $botonleft; */
 }

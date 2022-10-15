@@ -11,9 +11,75 @@
     &:hover{
 fill: var(--fillhovericons);
 transform: translateY(-10px);
-
     }
 }
-.face{
-    fill: var(--fillfacebook);
+.facebook{
+    fill: rgb(0, 99, 247);
+    cursor: pointer;
+    border-radius: 10px;
+    transition:0.4s;
+    box-shadow: rgb(204, 219, 232)
+    3px 3px 6px 0px,
+    rgba(255, 255, 255)
+    -3px -3px 6px 1px;
+    &:hover{
+        fill: var(--fillhovericons);
+        transform: translateY(-10px);
+            }
+}
+.whatssap{
+    fill: green;
+    cursor: pointer;
+    border-radius: 10px;
+    transition:0.4s;
+    box-shadow: rgb(204, 219, 232)
+    3px 3px 6px 0px,
+    rgba(255, 255, 255)
+    -3px -3px 6px 1px;
+    &:hover{
+        fill: var(--fillhovericons);
+        transform: translateY(-10px);
+            }
+}
+.email{
+    fill: rgb(197, 23, 0);
+    cursor: pointer;
+    border-radius: 10px;
+    transition:0.4s;
+    box-shadow: rgb(204, 219, 232)
+    3px 3px 6px 0px,
+    rgba(255, 255, 255)
+    -3px -3px 6px 1px;
+    &:hover{
+        fill: var(--fillhovericons);
+        transform: translateY(-10px);
+            }
+}
+.instagram{  
+    fill: red;
+    cursor: pointer;
+    border-radius: 10px;
+    transition:0.4s;
+    box-shadow: rgb(204, 219, 232)
+    3px 3px 6px 0px,
+    rgba(255, 255, 255)
+    -3px -3px 6px 1px;
+    &:hover{
+        fill: var(--fillhovericons);
+        transform: translateY(-10px);
+            }
+}
+.mensengger{  
+    fill: rgb(0, 102, 255);
+    cursor: pointer;
+    border-radius: 10px;
+    transition:0.4s;
+    box-shadow: rgb(204, 219, 232)
+    3px 3px 6px 0px,
+    rgba(255, 255, 255)
+    -3px -3px 6px 1px;
+    &:hover{
+        fill: var(--fillhovericons);
+        transform: translateY(-10px);
+            }
 }

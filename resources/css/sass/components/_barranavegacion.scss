@@ -1,4 +1,4 @@
-.CajaPrincipal {
+.Cajamenu {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -8,25 +8,26 @@
     box-shadow: 2px 2px 5px #caafaf;
     width: 100%;
     z-index: -1;
-    .logo {
+    &_logo {
       margin-right: 25px;
       border-radius: 20px;
     }
     
-    .nombre {
+    &_nombre {
       font-family: var(--Sansita);
       font-size: 25px;
       color: #0a0a0a;
       display: block;
       padding-right: 640px;
     }
-    .nav-item {
+    &_nav-item {
       display: inline-block;
       margin-left: 50px;
       font-size: 15px;
+      
     }
     
-    .nav-link {
+    &_nav-link {
       font-size: 18px;
       font-family: var(--Sansita);
       width: 110px;
@@ -35,7 +36,7 @@
       transition:0.4s;
       
       &:hover {
-          transform: translateY(-10px);
+        
         border-bottom: 1px solid #000000;
         color: rgb(34, 9, 255);
       }
@@ -44,4 +45,3 @@
       }
     }
   }
-  

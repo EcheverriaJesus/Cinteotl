@@ -1,14 +1,14 @@
-<nav class="CajaPrincipal">
+<nav class="Cajamenu">
     <ul>
-        <img class="logo" width="35" src="/images/logo.png" alt="">
+        <img class="Cajamenu_logo" width="35" src="/images/logo.png" alt="">
     </ul>
     <ul>
-        <p class="nombre">CINTÉOTL</p>
+        <p class="Cajamenu_nombre">CINTÉOTL</p>
     </ul>
     <ul>
         @foreach ($items as $item)
-            <li class="nav-item">
-                <a class="nav-link" href="{{ $item['route'] }}">{{ $item['text'] }}</a>
+            <li class="Cajamenu_nav-item">
+                <a class="Cajamenu_nav-link" href="{{ $item['route'] }}">{{ $item['text'] }}</a>
             </li>
         @endforeach
     </ul>
