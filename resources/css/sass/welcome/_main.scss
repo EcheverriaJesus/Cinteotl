@@ -1,0 +1,17 @@
+.welcomemain {
+    position: relative;
+     width: 100%;
+     height: 110vh;
+&_imageh{
+  width: 100%;
+  height: 100%;
+}
+     &_subtitle{
+        color: white;
+        position: absolute;
+        top: 15px;
+        left: var(--lineleft);
+       font-size: 25px;
+     }
+    }
+    

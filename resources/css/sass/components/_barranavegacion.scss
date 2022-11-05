@@ -1,47 +1,66 @@
 .Cajamenu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 55px;
-    background-color: rgb(255, 255, 255);
-    padding-right: 30px;
-    box-shadow: 2px 2px 5px #caafaf;
-    width: 100%;
-    z-index: -1;
-    &_logo {
-      margin-right: 25px;
-      border-radius: 20px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  box-shadow: 2px 2px 5px #035adb;
+  z-index: 100;
+  padding-left: var(--lineleft);
+  padding-right: 50px;
+  &_logo {
+    border-radius: 20px;
+    float: left;
+  }
+
+  &_nombre {
+    font-family: var(--Sansita);
+    font-size: 25px;
+    color: #0a0a0a;
+    float: left;
+    padding-left: 15px;
+  }
+
+  &_nav-item {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 15px;
+
+  }
+
+  &_nav-link {
+    font-size: 18px;
+    font-family: var(--Sansita);
+    width: 110px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.4s;
+
+    &:hover {
+
+      border-bottom: 1px solid #003cff;
+      color: rgb(34, 9, 255);
     }
-    
-    &_nombre {
-      font-family: var(--Sansita);
-      font-size: 25px;
-      color: #0a0a0a;
-      display: block;
-      padding-right: 640px;
-    }
-    &_nav-item {
-      display: inline-block;
-      margin-left: 50px;
-      font-size: 15px;
-      
-    }
-    
-    &_nav-link {
-      font-size: 18px;
-      font-family: var(--Sansita);
-      width: 110px;
-      text-decoration: none;
-      color: rgb(0, 0, 0);
-      transition:0.4s;
-      
-      &:hover {
-        
-        border-bottom: 1px solid #000000;
-        color: rgb(34, 9, 255);
-      }
-      &:focus {
-        color: rgb(255, 123, 0);
-      }
+
+    &:focus {
+      color: rgb(255, 123, 0);
     }
   }
+  &_cajabotonis {
+    font-family: var(--Roboto);
+    font-size: 12px;
+    color: white;
+    width: 120px;
+    height: 35px;
+    border-radius: 25px;
+    border: none;
+    background-color: #176bca;
+    &:hover{
+      background-color: rgb(168, 39, 0);
+      transform: translateY(-2px);
+      transform: scale(0.9);
+          }
+  }
+}

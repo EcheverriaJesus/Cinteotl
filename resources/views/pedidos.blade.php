@@ -13,3 +13,6 @@
     @endphp
     <x-barranavegacion :items="$items"></x-barranavegacion>
 </header>
+@component('components.slider')
+    
+@endcomponent

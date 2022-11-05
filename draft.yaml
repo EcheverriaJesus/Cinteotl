@@ -1,0 +1,60 @@
+models:
+    usuarios:
+        nombreusuario: string 
+        contraseña: string:500 
+        tipo: string:10 
+        relationships:
+            belongsTo: reservaciones, ventas
+    platillos:
+        nombreplatillos: string:100 
+        detalleplatillo: string 
+        precio: string 
+        detallereceta: string 
+        relationships:
+            belongsTo: detalleplatillo, detallereceta
+    bebidas:
+        nombrebebida: string 
+        detallebebida: string 
+        precio: string 
+        detallereceta: string 
+        relationships:
+            belongsTo: detallebebida, detallereceta
+    reservaciones:
+        fecharegistro: dateTime 
+        fechareservada: dateTime 
+        usuarios: string 
+        mesas: string 
+        relationships:
+            belongsTo: usuarios, mesas
+    mesas:
+        clave: string 
+        sillas: string 
+        tamaño: string 
+    detalleplatillos:
+        nombreplatillo: string 
+        receta: string 
+    detallebebida:
+        nombrebebida: string 
+        receta: string 
+    ventas:
+        usuarios: string 
+        total: string 
+        fechaventa: string 
+seeders: usuarios, platillos, bebidas, reservar, mesas, detalleplatillos, detallebebida, ventas
+controllers:
+    usuarios:
+        resource: web
+    platillos:
+        resource: web
+    bebidas:
+        resource: web
+    reservaciones:
+        resource: web
+    mesas:
+        resource: web
+    detalleplatillos:
+        resource: web
+    detallebebida:
+        resource: web
+    ventas:
+        resource: web

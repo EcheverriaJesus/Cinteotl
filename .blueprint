@@ -1,0 +1,109 @@
+created:
+    - app/Http/Controllers/usuariosController.php
+    - app/Http/Controllers/platillosController.php
+    - app/Http/Controllers/bebidasController.php
+    - app/Http/Controllers/reservacionesController.php
+    - app/Http/Controllers/mesasController.php
+    - app/Http/Controllers/detalleplatillosController.php
+    - app/Http/Controllers/detallebebidaController.php
+    - app/Http/Controllers/ventasController.php
+    - database/factories/UsuariosFactory.php
+    - database/factories/PlatillosFactory.php
+    - database/factories/BebidasFactory.php
+    - database/factories/ReservacionesFactory.php
+    - database/factories/MesasFactory.php
+    - database/factories/DetalleplatillosFactory.php
+    - database/factories/DetallebebidaFactory.php
+    - database/factories/VentasFactory.php
+    - database/migrations/2022_11_04_214302_create_usuarios_table.php
+    - database/migrations/2022_11_04_214303_create_platillos_table.php
+    - database/migrations/2022_11_04_214304_create_bebidas_table.php
+    - database/migrations/2022_11_04_214305_create_reservaciones_table.php
+    - database/migrations/2022_11_04_214306_create_mesas_table.php
+    - database/migrations/2022_11_04_214307_create_detalleplatillos_table.php
+    - database/migrations/2022_11_04_214308_create_detallebebidas_table.php
+    - database/migrations/2022_11_04_214309_create_ventas_table.php
+    - app/Models/usuarios.php
+    - app/Models/platillos.php
+    - app/Models/bebidas.php
+    - app/Models/reservaciones.php
+    - app/Models/mesas.php
+    - app/Models/detalleplatillos.php
+    - app/Models/detallebebida.php
+    - app/Models/ventas.php
+    - database/seeders/UsuariosSeeder.php
+    - database/seeders/PlatillosSeeder.php
+    - database/seeders/BebidasSeeder.php
+    - database/seeders/ReservarSeeder.php
+    - database/seeders/MesasSeeder.php
+    - database/seeders/DetalleplatillosSeeder.php
+    - database/seeders/DetallebebidaSeeder.php
+    - database/seeders/VentasSeeder.php
+    - tests/Feature/Http/Controllers/usuariosControllerTest.php
+    - tests/Feature/Http/Controllers/platillosControllerTest.php
+    - tests/Feature/Http/Controllers/bebidasControllerTest.php
+    - tests/Feature/Http/Controllers/reservacionesControllerTest.php
+    - tests/Feature/Http/Controllers/mesasControllerTest.php
+    - tests/Feature/Http/Controllers/detalleplatillosControllerTest.php
+    - tests/Feature/Http/Controllers/detallebebidaControllerTest.php
+    - tests/Feature/Http/Controllers/ventasControllerTest.php
+    - app/Http/Requests/usuarioStoreRequest.php
+    - app/Http/Requests/usuarioUpdateRequest.php
+    - app/Http/Requests/platilloStoreRequest.php
+    - app/Http/Requests/platilloUpdateRequest.php
+    - app/Http/Requests/bebidaStoreRequest.php
+    - app/Http/Requests/bebidaUpdateRequest.php
+    - app/Http/Requests/reservacioneStoreRequest.php
+    - app/Http/Requests/reservacioneUpdateRequest.php
+    - app/Http/Requests/mesaStoreRequest.php
+    - app/Http/Requests/mesaUpdateRequest.php
+    - app/Http/Requests/detalleplatilloStoreRequest.php
+    - app/Http/Requests/detalleplatilloUpdateRequest.php
+    - app/Http/Requests/detallebebidaStoreRequest.php
+    - app/Http/Requests/detallebebidaUpdateRequest.php
+    - app/Http/Requests/ventaStoreRequest.php
+    - app/Http/Requests/ventaUpdateRequest.php
+    - resources/views/usuario/index.blade.php
+    - resources/views/usuario/create.blade.php
+    - resources/views/usuario/show.blade.php
+    - resources/views/usuario/edit.blade.php
+    - resources/views/platillo/index.blade.php
+    - resources/views/platillo/create.blade.php
+    - resources/views/platillo/show.blade.php
+    - resources/views/platillo/edit.blade.php
+    - resources/views/bebida/index.blade.php
+    - resources/views/bebida/create.blade.php
+    - resources/views/bebida/show.blade.php
+    - resources/views/bebida/edit.blade.php
+    - resources/views/reservacione/index.blade.php
+    - resources/views/reservacione/create.blade.php
+    - resources/views/reservacione/show.blade.php
+    - resources/views/reservacione/edit.blade.php
+    - resources/views/mesa/index.blade.php
+    - resources/views/mesa/create.blade.php
+    - resources/views/mesa/show.blade.php
+    - resources/views/mesa/edit.blade.php
+    - resources/views/detalleplatillo/index.blade.php
+    - resources/views/detalleplatillo/create.blade.php
+    - resources/views/detalleplatillo/show.blade.php
+    - resources/views/detalleplatillo/edit.blade.php
+    - resources/views/detallebebida/index.blade.php
+    - resources/views/detallebebida/create.blade.php
+    - resources/views/detallebebida/show.blade.php
+    - resources/views/detallebebida/edit.blade.php
+    - resources/views/venta/index.blade.php
+    - resources/views/venta/create.blade.php
+    - resources/views/venta/show.blade.php
+    - resources/views/venta/edit.blade.php
+updated:
+    - routes/web.php
+models:
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string:100 nullable' }
+    usuarios: { nombreusuario: string, contraseña: 'string:500', tipo: 'string:10', relationships: { belongsTo: 'reservaciones, ventas' } }
+    platillos: { nombreplatillos: 'string:100', detalleplatillo: string, precio: string, detallereceta: string, relationships: { belongsTo: 'detalleplatillo, detallereceta' } }
+    bebidas: { nombrebebida: string, detallebebida: string, precio: string, detallereceta: string, relationships: { belongsTo: 'detallebebida, detallereceta' } }
+    reservaciones: { fecharegistro: dateTime, fechareservada: dateTime, usuarios: string, mesas: string, relationships: { belongsTo: 'usuarios, mesas' } }
+    mesas: { clave: string, sillas: string, tamaño: string }
+    detalleplatillos: { nombreplatillo: string, receta: string }
+    detallebebida: { nombrebebida: string, receta: string }
+    ventas: { usuarios: string, total: string, fechaventa: string }
