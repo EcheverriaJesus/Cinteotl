@@ -14,9 +14,9 @@ header("location: bienvenida.php");
         $items = [['route' => '/', 'text' => 'HOME'],
                  ['route' => '/reservar', 'text' => 'RESERVAR'],
                  ['route' => '/menu', 'text' => 'MENU']];
-                 
     @endphp
     <x-barranavegacion :items="$items"></x-barranavegacion>
+    
         <div class="cajalogin">
             <main>
                 <div class="contenedor__todo">
@@ -55,5 +55,5 @@ header("location: bienvenida.php");
                     </div>
                 </div>
             </main>
-            <script src="assets/js/script.js"></script>
+            <script src="../js/main.js"></script>
         </div>

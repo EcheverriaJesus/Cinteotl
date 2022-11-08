@@ -1,0 +1,322 @@
+
+.Conocenos {
+    /* background-image: linear-gradient(270deg, #290d64 0, #1b0859 50%, #0b044e 100%);    */
+    background-color: var(--primarycolor);
+     height: 100%;
+
+    // background: url("../../../images/comida3.png") top right no-repeat;
+}
+.tituloprin{
+    
+    text-align: center;
+    position: absolute;
+    margin-left: 625px;
+    font-family: var(--Sansita);
+    body {
+         font: 400 1em/1.5 "Neuton"; 
+    background: #090d00; 
+    color: rgb(255, 255, 255); text-align: center; margin: 0 }
+
+p {
+    font-size: 17ppx;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	display: inline-block;
+	border: 4px double rgba(255, 255, 255, 0.25);
+	border-width: 4px 0;
+	padding: 1.5em 0em;
+	position: absolute;
+	top: 18%;
+	left: 50%;
+	width: 40em;
+	margin: 0 0 0 -20em;
+    color: #fefffa;
+  
+  span {
+  	font: 700 4em/1 "Oswald", sans-serif;
+  	letter-spacing: 0;
+  	padding: .25em 0 .325em;
+	  display: block;
+	  margin: 0 auto;
+  	text-shadow: 0 0 80px rgba(255,255,255,.5);
+
+/* Clip Background Image */
+background-image: linear-gradient(180deg, #ffe951 0, #ffdd50 8.33%, #ffce51 16.67%, #ffbf52 25%, #ffae53 33.33%, #ff9c53 41.67%, #f28953 50%, #e17852 58.33%, #d06951 66.67%, #c25c51 75%, #b55252 83.33%, #aa4a53 91.67%, #a04455 100%);
+	  -webkit-background-clip: text;
+	  background-clip: text;
+
+/* Animate Background Image */
+
+	  -webkit-text-fill-color: transparent;
+	  -webkit-animation: aitf 80s linear infinite;
+
+/* Activate hardware acceleration for smoother animations */
+
+	  -webkit-transform: translate3d(0,0,0);
+	  -webkit-backface-visibility: hidden;
+
+  }
+}
+
+/* Animate Background Image */
+
+@-webkit-keyframes aitf {
+	0% { background-position: 0% 50%; }
+	100% { background-position: 100% 50%; }
+}
+}
+
+.fotos {
+    display: flex;
+    padding-top: 170px;
+
+    .foto2 {
+        position: absolute;
+        width: 1240px;
+        height: 420px;
+        display: flex;
+        padding-top: 50px;
+
+    }
+
+    .foto3 {
+        position: absolute;
+        margin-left: 450px;
+        width: 350px;
+        height: 350px;
+    }
+}
+
+.seccion0 {
+    display: flex;
+
+    .foto4 {
+      
+        width: 777px;
+        height: 300px;
+    }
+
+    .seccion1 {
+        margin-left: 15px;
+        background-image: linear-gradient(180deg, #ffff7c 0, #ffff6f 12.5%, #fff565 25%, #ffda5c 37.5%, #f2bd53 50%, #dda14c 62.5%, #c98a46 75%, #b77642 87.5%, #a8663f 100%);
+        display: block;
+     
+        width: 450px;
+        height: 300px;
+
+        h2 {
+            padding-top: 30px;
+            text-align: center;
+            color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+        }
+
+        p {
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-right: 35px;
+            text-align: center;
+            color: black;
+            font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+            font-size: 17px;
+
+        }
+    }
+}
+
+.seccion2 {
+    display: flex;
+    height: 300px;
+    margin-left: 15px;
+
+    h3 {
+        postion: relative;
+        width: 855px;
+        background-image: linear-gradient(180deg, #ffff7c 0, #ffff6f 12.5%, #fff565 25%, #ffda5c 37.5%, #f2bd53 50%, #dda14c 62.5%, #c98a46 75%, #b77642 87.5%, #a8663f 100%);
+        margin-right: 20px;
+        padding-top: 40px;
+        padding-bottom: 80px;
+        text-align: center;
+        color: rgb(9, 9, 9);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+
+    }
+
+    p {
+        margin-top: 80px;
+        margin-left: 810px;
+        width: 400px;
+        height: 100px;
+        padding-top: 15px;
+        padding-left: 50px;
+        padding-right: 20px;
+        position: absolute;
+        text-align: center;
+        color: black;
+        font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+        font-size: 18px;
+
+    }
+
+    .seccion3 {
+        display: block;
+
+        .foto5 {
+
+            margin-right: 800px;
+            width: 800px;
+            height: 300px;
+        }
+
+    }
+
+}
+.video{
+    margin-top: 420px;
+
+}
+//Carrusel
+.slide {
+    margin-top: 20px;
+    margin-left: 15px;
+    width: 1230px;
+    position: relative;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+}
+
+.slide-open:checked+.slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.tamaño {
+    width: 100%;
+
+}
+
+.slide-item img {
+    height: 500px;
+    display: block;
+}
+
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.slide-control.prev {
+    left: 2%;
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#slide-1:checked~.control-1,
+#slide-2:checked~.control-2,
+#slide-3:checked~.control-3 {
+    display: block;
+}
+
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+
+#slide-1:checked~.control-1~.slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked~.control-2~.slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked~.control-3~.slide-indicador li:nth-child(3) .slide-circulo {
+    color: #428bca;
+}
+
+#titulo {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33),
+        -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+.parrafos{
+    display: flex;
+    justify-content: space-between;
+   
+
+    p{
+        padding-top: 40px;
+        padding-left: 80px;
+        padding-right: 80px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family:'Times New Roman', Times, serif;
+        font-size: 19px;
+        width: 500px;
+
+    }
+}

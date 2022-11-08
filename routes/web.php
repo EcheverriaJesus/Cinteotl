@@ -28,6 +28,12 @@ Route::get('/menu', function () {
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/administrar', function () {
+    return view('backoffice');
+});
+Route::get('/conocenos', function () {
+    return view('conocenos');
+});
 
 Route::resource('usuarios', App\Http\Controllers\usuariosController::class);
 

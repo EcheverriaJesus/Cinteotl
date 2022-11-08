@@ -3,31 +3,61 @@
         RESERVAR
     @endslot
 @endcomponent
-<header class="reservarheader">
     @php
         $items = [['route' => '/', 'text' => 'HOME'],
+                 ['route' => '/pedidos', 'text' => 'PEDIDOS'],
                  ['route' => '/reservar', 'text' => 'RESERVAR'],
                  ['route' => '/menu', 'text' => 'MENU']];
                  
     @endphp
     <x-barranavegacion :items="$items"></x-barranavegacion>
-
-
-        <img class="reservarheader_fondo" src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <div class="VistaReservar">
+        <div class="VistaReservar__Prin">
+            <h1>HAZ TU RESERVACIÓN AQUI</h1>
+            <p>En esta seccion podras hacer tu reservacion totalmente en linea y posteriormente te llegara un correro electronico de confirmacion de tu reservacion.</p>
+            <button class="VistaReservar__Boton">Regresar</button>
+        </div>
+    <div class="Vista-Reservar__formulario">
+        <h2>CINTEOTL</h2>
+        <form class="checkoutformulario1" action="" method="POST">
+    
+        <div class="group-form-name">
+            <label class="labelname" for="name"> Nombre:</label>
+            <input class="name" require type="text" name="name" id="name" >
+        </div>
+        
+        <div class="group-form-date">
+            <label class="date-form__label1" for="date">Fecha:</label>
+            <input class="date" require type="date" name="date" id="date">
+        </div>
          
-    @component('components.slider')
+        <div class="group-form-hour">
+            <label class="labelhour" for="hour">Hora:</label>
+            <div class="alertahora">
+            <input class="hour" require type="time" name="hour" id="hour" placeholder="Hora de apartura a las 1:00 P.M / Hora de cierre 9:00 P.M">
+            <label class="labelhour2" for="hour2">Abierto de 1:00 PM a 9:00 P.M</label>
+            </div>
+        </div>
     
-    @endcomponent 
-</header>
-
-<section class="reservarmain">
-<div>
-    <img class="reservarmain_fondo" src="https://images.pexels.com/photos/332090/pexels-photo-332090.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-</div>
-<div class="reservarmain_cajamenu">
-    <h3 class="reservarmain_cajamenu_menu">MENU</h3>
-</div>
-</section>
-@component('components.footer')
+        <div class="group-form-person">
+            <label class="labelperson" for="person">Numero de perosnas: </label>
+            <select name="table" class="person">
+                <option value="1">1-2 personas</option>
+                <option value="2">3-6 personas</option>
+                <option value="3">7-10 perosnas</option>
+                <option value="4">Mas de 10 personas</option>
+            </select>
+        </div>
     
-@endcomponent
+        <div class="group-form-email1">
+            <label class="labelemail1" for="email1"> E-mail:</label>
+            <input class="email1"  require type="email" name="email1" id="email1">
+        </div>
+        
+        <div>
+            <button class="botonreservar">Reservar</button>
+        </div> 
+    
+        </form>
+        </div>
+    </div>

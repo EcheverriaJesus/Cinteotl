@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sansita&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sansita&display=swap" rel="stylesheet">
-</head>
-
-<body>
    
+</head>
+<body>
 </body>
 </html>

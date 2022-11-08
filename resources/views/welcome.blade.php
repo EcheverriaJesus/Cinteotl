@@ -6,7 +6,10 @@
 
 <header class="welcomeheader">
     @php
-        $items = [['route' => '/', 'text' => 'INICIO'], ['route' => '/reservar', 'text' => 'RESERVAR'], ['route' => '/menu', 'text' => 'MENU']];
+        $items = [['route' => '/', 'text' => 'INICIO'],
+                  ['route' => '/reservar', 'text' => 'RESERVAR'],
+                 
+                  ['route' => '/menu', 'text' => 'MENU']];
         
     @endphp
     <x-barranavegacion :items="$items"></x-barranavegacion>
@@ -36,12 +39,6 @@
     <P class="welcomeheader_descripcion">Cinteotl es un restaurante que ofrece una gran<br />
         variedad de platillos con una calidad unica,<br />
         ademas de contar con un lugar agradable...</P>
-        <div class="welcomeheader_cuadroConocenos">
-        <p>Reservar</p>
-    </div>
-   <div class="welcomeheader_libro">
-     <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M22 24h-17c-1.657 0-3-1.343-3-3v-18c0-1.657 1.343-3 3-3h17v24zm-2-4h-14.505c-1.375 0-1.375 2 0 2h14.505v-2zm0-18h-3v9l-2-1.547-2 1.547v-9h-8v16h15v-16z"/></svg>
-   </div>
 </header>
 <section  class="welcomemain">
     

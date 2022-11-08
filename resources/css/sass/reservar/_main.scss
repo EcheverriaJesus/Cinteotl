@@ -1,33 +1,176 @@
-.reservarmain{
+.VistaReservar {
     display: flex;
-    justify-content: center;
     position: relative;
     width: 100%;
-    height: 200vh;
-    background-color: rgb(255, 255, 255);
-    &_fondo{
-        padding-top: 5px;
-        width: 100%;
-        height: 100%;
-        filter: brightness(50%);
-    
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.Vista-Reservar__Prin {
+    position: absolute;
+    width: 400px;
+    text-align: left;
+    padding-top: 150px;
+    margin-left: 50px;
+
+    h1 {
+        text-align: left;
+        padding: 20px 0px 20px;
+        font-size: 45px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    &_cajamenu{
-        border: 1px solid rgb(255, 255, 255);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 250px;
-        height: 80px;
+
+    p {
+        color: rgb(3, 3, 3);
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    .Vista-Reservar__Boton {
+        color: rgb(0, 0, 0);
+        width: 140px;
+        height: 35px;
+        background: linear-gradient(rgb(255, 102, 0), yellow, rgb(244, 154, 9));
         border-radius: 5px;
-        margin-top: 30px;
-        background-color: rgba(255, 0, 0, 0.479);
-        position:absolute;
-        clip-path: polygon(100% 0, 100% 100%, 74% 84%, 48% 100%, 27% 84%, 0 100%, 0 0);
-        &_menu{
- color:white;
- font-size:35px;
- font-family:var(--Sansita);
+        border-color: black solid 2px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 15px;
+
+        &:hover {
+            cursor: pointer;
+            color: black;
+            background: linear-gradient(rgb(79, 79, 77), rgb(252, 214, 213), rgb(214, 206, 197));
         }
     }
- }
+}
+
+.Vista-Reservar__formulario {
+    position: absolute;
+    height: 30rem;
+    width: 22rem;
+    top: 50px;
+    left: 65%;
+    background-color: rgba($color: #000000, $alpha: .7);
+    border: 5px black double;
+    border-radius: 20px;
+
+    label {
+        color: rgb(255, 255, 255);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    h2 {
+        color: black;
+        background: linear-gradient(rgb(255, 102, 0), yellow, rgb(238, 17, 17));
+        border-radius: 20px;
+        margin-top: 25px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 40px;
+    }
+}
+
+
+
+.checkoutformulario1 {
+    padding-left: 20px;
+    align-items: flex-start;
+    padding-bottom: 30px;
+}
+
+.group-form-name {
+    position: absolute;
+
+    .name {
+        display: block;
+        width: 300px;
+        height: 25px;
+    }
+}
+
+.group-form-date {
+    position: absolute;
+    margin-top: 60px;
+
+    .date {
+
+        display: block;
+        width: 300px;
+        height: 25px;
+    }
+
+}
+
+.group-form-hour {
+
+    position: absolute;
+    margin-top: 120px;
+
+    .alertahora {
+        display: flex;
+    }
+
+    .hour {
+        display: block;
+        width: 120px;
+        height: 25px;
+
+    }
+
+    .labelhour2 {
+        margin-left: 10px;
+        padding-top: 11px;
+        font-size: 12px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
+
+.group-form-person {
+    position: absolute;
+    margin-top: 180px;
+
+    .person {
+        display: block;
+        width: 300px;
+        height: 25px;
+    }
+
+}
+
+.group-form-email1 {
+    position: absolute;
+    margin-top: 240px;
+
+    .email1 {
+        display: block;
+        width: 300px;
+        height: 25px;
+    }
+}
+
+.botonreservar {
+    position: absolute;
+    color: rgb(12, 12, 12);
+    margin-top: 320px;
+    width: 150px;
+    margin-left: 150px;
+    height: 35px;
+    background: linear-gradient(rgb(255, 102, 0), yellow, rgb(244, 154, 9));
+    border-radius: 5px;
+    border-color: yellow 2px solid;
+    border: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+
+    &:hover {
+        cursor: pointer;
+        color: black;
+        background: linear-gradient(rgb(79, 79, 77), rgb(252, 214, 213), rgb(214, 206, 197));
+    }
+}

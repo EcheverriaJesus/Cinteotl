@@ -1,0 +1,43 @@
+.menumain{
+    display: flex;
+    justify-content: center;
+     position: relative;
+     width: 100%;
+     height: 200vh;
+     background-color: rgb(255, 255, 255);
+     &_fondo{
+         padding-top: 5px;
+         width: 100%;
+         height: 100%;
+         filter: brightness(50%);
+     
+     }
+     &_cajamenu{
+         border: 1px solid rgb(255, 255, 255);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         width: 250px;
+         height: 80px;
+         border-radius: 5px;
+         margin-top: 30px;
+         background-color: rgba(255, 0, 0, 0.479);
+         position:absolute;
+         clip-path: polygon(100% 0, 100% 100%, 74% 84%, 48% 100%, 27% 84%, 0 100%, 0 0);
+         &_menu{
+  color:white;
+  font-size:35px;
+  font-family:var(--Sansita);
+         }
+     }
+     &_encerrarcards{
+     display: flex;
+     flex-wrap: wrap;
+         position: absolute;
+         top: 150px;
+         left: var(--lineleft);
+         width: 1150px;
+         height: 80%;
+         background-color: rgba(0, 102, 255, 0);
+     }
+  }

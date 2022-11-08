@@ -9,42 +9,9 @@
         font-size: var(--title);
         position: absolute;
         top: 140px;
-        color: var(--primarycolor);
+        color: black;
         letter-spacing: 3px;
     }
-   &_cuadroConocenos{
-    display: flex;
-    position: absolute;
-    left: var(--lineleft);
-        top:450px;
-        width: 200px;
-        height: 40px;
-        border: 1px solid rgb(65, 0, 51);
-        background-color: #ffffff70;
-        padding-left: 15px;
-        border-radius: .50rem 0 0 .50rem;
-        color: rgb(0, 0, 0);
-        font-family: var(--Roboto);
-        align-items: center;
-        font-size: 18px;
-   }
-   &_libro{
-    display: flex;
-    position: absolute;
-    left: 299px;
-        top:450px;
-        width: 50px;
-        height: 40px;
-        border: 1px solid rgb(65, 0, 51);
-        background-color: #176bcac9;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0 .50rem .50rem 0;
-        cursor: pointer;
-      &:hover {
-            background-color: rgb(189, 39, 0);
-          }  
-   }
 
     &_logo{
         position: absolute;
@@ -92,7 +59,7 @@
         animation-timing-function:ease-out ;
     }
     &_descripcion{
-        color:var(--primarycolor);
+        color:black;
         position: absolute;
         left: var(--lineleft);
         top: 250px;
