@@ -1,7 +1,5 @@
-{{--
-    @extends('layouts.app')
-
-    @section('content')
-        venta.create template
-    @endsection
---}}
+@component('components.layout')
+    @slot('title')
+        Ventas
+    @endslot
+@endcomponent

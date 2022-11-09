@@ -1,7 +1,10 @@
-{{--
-    @extends('layouts.app')
+@component('components.layout')
+    @slot('title')
+        PLATILLOS
+    @endslot
+@endcomponent
 
-    @section('content')
-        platillo.index template
-    @endsection
---}}
+<aside class="backoffice">
+    @component('components.menubackoffice')
+@endcomponent
+</aside>

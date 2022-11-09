@@ -34,20 +34,26 @@ Route::get('/administrar', function () {
 Route::get('/conocenos', function () {
     return view('conocenos');
 });
+Route::get('/venta', function () {
+    return view('venta.index');
+});
+Route::get('/platillo', function () {
+    return view('platillo.index');
+});
+Route::get('/bebida', function () {
+    return view('bebida.index');
+});
+Route::get('/usuario', function () {
+    return view('usuario.index');
+});
+Route::get('/mesa', function () {
+    return view('mesa.index');
+});
+Route::get('/reservar', function () {
+    return view('reservacione.index');
+});
 
-Route::resource('usuarios', App\Http\Controllers\usuariosController::class);
 
-Route::resource('platillos', App\Http\Controllers\platillosController::class);
-
-Route::resource('bebidas', App\Http\Controllers\bebidasController::class);
-
-Route::resource('reservaciones', App\Http\Controllers\reservacionesController::class);
-
-Route::resource('mesas', App\Http\Controllers\mesasController::class);
-
-Route::resource('detalleplatillos', App\Http\Controllers\detalleplatillosController::class);
-
-Route::resource('detallebebida', App\Http\Controllers\detallebebidaController::class);
 
 
 Route::resource('usuarios', App\Http\Controllers\usuariosController::class);

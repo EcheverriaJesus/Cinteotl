@@ -1,7 +1,10 @@
-{{--
-    @extends('layouts.app')
+@component('components.layout')
+    @slot('title')
+    RESERVACIONES
+    @endslot
+@endcomponent
 
-    @section('content')
-        reservacione.index template
-    @endsection
---}}
+<aside class="backoffice">
+    @component('components.menubackoffice')
+@endcomponent
+</aside>
